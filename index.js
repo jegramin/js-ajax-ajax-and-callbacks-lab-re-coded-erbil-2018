@@ -11,7 +11,9 @@ let searchRepositories = ()=>{
     
   }
   function showCommits(){
-    
+    $.get(`https://api.github.com/repos/${el.dataset.owner}/${el.dataset.repository}/commits`, data => {
+    $('#details').html(data)
+  })
   }
 
 $(document).ready(function (){
