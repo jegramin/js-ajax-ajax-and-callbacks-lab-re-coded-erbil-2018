@@ -4,7 +4,7 @@ let searchRepositories = ()=>{
       $('#results').innerHTML = `<div>
           <p>name: ${data.name}, description: ${data.description}, repository owner login: ${data.owner.login}</p>
           <a href="${data.html_url}">${data.name}</a>
-          <a href=""></a>
+          <a href="" onclick="">Show Commits</a>
       </div>`;
       
     })
