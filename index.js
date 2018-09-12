@@ -1,5 +1,5 @@
 $(document).ready(function (){
   let searchRepositories = ()=>{
-    let searchTerms = document.g
+    let searchTerms = document.getElementById("searchTerms").value;
   }
 });
