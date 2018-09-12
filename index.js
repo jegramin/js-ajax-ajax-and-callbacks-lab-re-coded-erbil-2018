@@ -1,5 +1,7 @@
-$(document).ready(function (){
-  let searchRepositories = ()=>{
+let searchRepositories = ()=>{
     let searchTerms = document.getElementById("searchTerms").value;
   }
+
+$(document).ready(function (){
+  
 });
