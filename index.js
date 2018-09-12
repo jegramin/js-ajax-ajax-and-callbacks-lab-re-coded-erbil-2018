@@ -7,13 +7,17 @@ let searchRepositories = ()=>{
           <a href="" onclick="showCommits()">Show Commits</a>
       </div>`;
       
-    })
+    }).fail(displayError())
     
   }
   function showCommits(){
     $.get(`https://api.github.com/repos/${el.dataset.owner}/${el.dataset.repository}/commits`, data => {
     $('#details').html(data)
-  }).fail()
+  }).fail(displayError())
+  }
+  
+  function displayError(){
+    
   }
 
 $(document).ready(function (){
