@@ -1,6 +1,7 @@
 let searchRepositories = ()=>{
     let searchTerms = document.getElementById("searchTerms").value;
-    $(#results)
+    .get()
+    $(#results).innerHTML = 
   }
 
 $(document).ready(function (){
